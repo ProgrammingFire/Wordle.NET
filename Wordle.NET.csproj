@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Spectre.Console" Version="0.44.0" />
+    <None Include="words.json" CopyToOutputDirectory="Always" />
   </ItemGroup>
 
 </Project>
