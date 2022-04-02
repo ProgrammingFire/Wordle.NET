@@ -8,7 +8,22 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>wordle</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
+    <PackageId>Wordle.NET</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Nouman Rahman</Authors>
+    <Company>ProgrammingFire</Company>
+    <PackageTags>Console;Terminal;Game;App</PackageTags>
+    <Description>
+      Wordle For Terminals
+    </Description>
+    <RepositoryUrl>https://github.com/ProgrammingFire/Wordle.NET</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="nupkg\**" />
+    <EmbeddedResource Remove="nupkg\**" />
+    <None Remove="nupkg\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Spectre.Console" Version="0.44.0" />
